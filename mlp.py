@@ -15,7 +15,7 @@ def passthrough(weights, inputs, bias):
 
 
 def backprop(weight1, weight2, bias1, bias2, input_x, true):
-    lr_rate = 0.7
+    lr_rate = 0.1
 
     pass_1 = passthrough(weight1, input_x, bias1)
     pass_2 = passthrough(weight2, pass_1[0], bias2)
